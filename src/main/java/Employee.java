@@ -1,14 +1,13 @@
-public class Employee {
+abstract class Employee {
 	
-	private String name;
-	private int number;
-	private int salary;
-	private boolean hasBeenPaid = false;
+	protected String name;
+	protected int number;
+	protected int salary;
+	protected boolean hasBeenPaid = false;
 	
-	public Employee(String name, int number, int salary) {
+	public Employee(String name, int number) {
 		this.name = name;
 		this.number = number;
-		this.salary = salary;
 		
 	}
 	
@@ -33,6 +32,7 @@ public class Employee {
 
 	public int getSalary() {
 		return salary;
+
 	}
 	
 

@@ -4,7 +4,7 @@ import org.junit.Test;
 
 public class DoctorTest {
 	
-	Doctor underTest1 = new Doctor("JD", 1);
+	Doctor underTest1 = new Doctor("JD", 1, "Foot");
 	
 	@Test
 	public void doctorShouldHaveName() {
@@ -25,4 +25,12 @@ public class DoctorTest {
 		int expected = underTest1.getSalary();
 		assertEquals(expected, 90000);
 	}
+	
+	@Test
+	public void doctorShouldHaveSpecialty () {
+		String expected = underTest1.getSpecialty();
+				assertEquals(expected, "Foot" );
+		
+		
+}
 }
