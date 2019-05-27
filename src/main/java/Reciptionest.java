@@ -1,18 +1,18 @@
 
 public class Reciptionest extends NonMedicalEmployee {
 
-	public Reciptionest(String name, int number) {
-		super(name, number);
+	public Reciptionest(String name, int number, int salary) {
+		super(name, number, salary);
 
 	}
 
-	protected int salary = 45000;
+	
 	boolean isSweeping = false;
 	@Override
 	public boolean toggles() {
 		
 		if (isSweeping) {
-			return isSweeping;
+			return true;
 		}
 		return false;
 

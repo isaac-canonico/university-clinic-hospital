@@ -2,12 +2,13 @@ abstract class Employee {
 	
 	protected String name;
 	protected int number;
-	protected int salary;
+	protected  int salary;
 	protected boolean hasBeenPaid = false;
 	
-	public Employee(String name, int number) {
+	public Employee(String name, int number,int salary) {
 		this.name = name;
 		this.number = number;
+		this.salary= salary;
 		
 	}
 	

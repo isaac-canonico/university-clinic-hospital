@@ -1,8 +1,8 @@
 abstract class MedicalEmployee extends Employee {
 
 	
-	public MedicalEmployee(String name, int number) {
-		super(name, number);
+	public MedicalEmployee(String name, int number, int salary) {
+		super(name, number, salary);
 	}
 
 	public abstract void care(int getHealthLevel);

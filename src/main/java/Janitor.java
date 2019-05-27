@@ -1,17 +1,17 @@
 
 public class Janitor extends NonMedicalEmployee{
 
-	public Janitor(String name, int number) {
-		super(name, number);
+	public Janitor(String name, int number,int salary) {
+		super(name, number,salary);
 		
 	}
-protected int salary=40000;
+
 boolean onThePhone=false;
 @Override
 public boolean toggles() {
 	
 	if (onThePhone) {
-	return onThePhone;
+	return true;
 	}
 	return false;
 

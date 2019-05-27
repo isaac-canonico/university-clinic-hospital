@@ -4,7 +4,7 @@ import org.junit.Test;
 
 public class DoctorTest {
 	
-	Doctor underTest1 = new Doctor("JD", 1, "Foot");
+	Doctor underTest1 = new Doctor("JD", 1, "Foot", 90000);
 	
 	@Test
 	public void doctorShouldHaveName() {

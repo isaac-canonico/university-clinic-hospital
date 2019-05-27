@@ -5,13 +5,14 @@ public class Doctor extends MedicalEmployee {
 		// Employee Name, Employee Number, Salary, whether or not they have been paid
 		// (For example “JD”, 111, 90000, false)
 
-	protected int salary = 90000;
+	
 	private String specialty;
 
-	public Doctor(String name, int number, String specialty) {
-		super(name, number);
+	public Doctor(String name, int number, String specialty, int salary) {
+		super(name, number,salary);
 		this.name = name;
 		this.number = number;
+		this.salary=salary;
 		this.specialty = specialty;
 	}
 
