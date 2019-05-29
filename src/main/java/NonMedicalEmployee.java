@@ -1,12 +1,13 @@
 
-abstract class NonMedicalEmployee extends Employee{
+abstract class NonMedicalEmployee extends Employee {
 
-	public NonMedicalEmployee(String name, int number, int salary) {
-		super(name, number, salary);
-		
+	public NonMedicalEmployee(String name, int number) {
+		super(name, number);
+
 	}
 
-		public abstract boolean toggles();
-	
-	}
+	public abstract boolean toggles();
 
+	public abstract int getSalary();
+
+}

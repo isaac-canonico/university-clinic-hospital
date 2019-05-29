@@ -2,7 +2,7 @@ import static org.junit.Assert.assertEquals;
 
 	import org.junit.Test;
 	public class ReciptionestTest {
-	Reciptionest undertest200=new Reciptionest("Ahmed",200,45000);
+	Reciptionest undertest200=new Reciptionest("Ahmed",200);
 	
 	@Test
 	public void reciptionestShouldHaveName() {

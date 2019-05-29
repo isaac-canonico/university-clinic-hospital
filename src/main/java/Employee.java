@@ -2,16 +2,15 @@ abstract class Employee {
 	
 	protected String name;
 	protected int number;
-	protected  int salary;
+	protected int salary;
 	protected boolean hasBeenPaid = false;
 	
-	public Employee(String name, int number,int salary) {
+	public Employee(String name, int number) {
+		
 		this.name = name;
 		this.number = number;
-		this.salary= salary;
-		
 	}
-	
+
 	public void paySalary() {
 		
 		hasBeenPaid = true;
@@ -31,10 +30,8 @@ abstract class Employee {
 		return number;
 	}
 
-	public int getSalary() {
-		return salary;
+	public abstract int getSalary();
 
 	}
 	
 
-}

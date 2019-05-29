@@ -2,10 +2,9 @@
 public class Nurse extends MedicalEmployee {
 
 	protected int numberOfPatients;
-	protected int salary = 50000;
 
-	public Nurse(String name, int number,int salary) {
-		super(name, number,salary);
+	public Nurse(String name, int number) {
+		super(name, number);
 		this.name = name;
 		this.number = number;
 
@@ -27,4 +26,8 @@ public class Nurse extends MedicalEmployee {
 	public void care(int getHealthLevel) {
 		getHealthLevel -= 3;
 }
+	
+	public int getSalary () {
+		return 50000;
+	}
 }
