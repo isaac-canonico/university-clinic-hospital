@@ -10,6 +10,7 @@ abstract class Employee {
 		this.name = name;
 		this.number = number;
 	}
+	
 
 	public void paySalary() {
 		

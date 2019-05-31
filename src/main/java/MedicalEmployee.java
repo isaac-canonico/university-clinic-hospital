@@ -5,14 +5,14 @@ abstract class MedicalEmployee extends Employee {
 		super(name, number);
 		this.name = name;
 		this.number = number;
-		
 	}
+	
+	public abstract void care(Patient patient);
 
-	public abstract void care(int getHealthLevel);
-
-	public abstract void drawBlood(int getBloodLevel);
+	public abstract void drawBlood(Patient patient);
 	
 	public abstract int getSalary();
+
 
 }
 

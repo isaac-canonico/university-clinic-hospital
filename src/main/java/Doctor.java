@@ -21,14 +21,14 @@ public class Doctor extends MedicalEmployee {
 	}
 
 	@Override
-	public void drawBlood(int getBloodLevel) {
-		getBloodLevel -= 5;
+	public void drawBlood(Patient Patient) {
+		Patient.BLOOD_LEVEL -= 5;
 		
 	}
 
 	@Override
-	public void care (int getHealthLevel) {
-		getHealthLevel -= 5;
+	public void care (Patient patient) {
+		patient.HEALTH_LEVEL += 5;
 		
 	}
 	

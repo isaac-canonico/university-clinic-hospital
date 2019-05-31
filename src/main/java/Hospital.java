@@ -16,6 +16,7 @@ public class Hospital {
 
 	public int getNumberOfEmployees() {
 		return employees.size();
+		
 	}
 
 }

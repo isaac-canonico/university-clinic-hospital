@@ -22,9 +22,17 @@ public class PatientTest {
 	
 	@Test
 	public void doctorDrawBloodShouldTake5FromBloodLevel() {
-		doctor1.drawBlood(patient1.getBloodLevel());
+		doctor1.drawBlood(patient1);
 		int newBloodLevel = patient1.getBloodLevel();
 		assertEquals(newBloodLevel, 15);
+	
+	}
+	
+	@Test
+	public void doctorCareShouldAdd5toHealthLevel() {
+		doctor1.care(patient1);
+		int newHealthLevel = patient1.getHealthLevel();
+		assertEquals(newHealthLevel, 15);
 	
 	}
 }
