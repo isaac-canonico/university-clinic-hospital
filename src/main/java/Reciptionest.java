@@ -1,8 +1,8 @@
 
 public class Reciptionest extends NonMedicalEmployee {
 
-	public Reciptionest(String name, int number, int salary) {
-		super(name, number, salary);
+	public Reciptionest(String name, int number) {
+		super(name, number);
 
 	}
 
@@ -16,6 +16,11 @@ public class Reciptionest extends NonMedicalEmployee {
 		}
 		return false;
 
+	}
+	@Override
+	public int getSalary() {
+		
+		return 45000;
 	}
 
 	

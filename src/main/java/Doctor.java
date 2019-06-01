@@ -8,11 +8,10 @@ public class Doctor extends MedicalEmployee {
 	
 	private String specialty;
 
-	public Doctor(String name, int number, String specialty, int salary) {
-		super(name, number,salary);
+	public Doctor(String name, int number, String specialty) {
+		super(name, number);
 		this.name = name;
 		this.number = number;
-		this.salary=salary;
 		this.specialty = specialty;
 	}
 
@@ -22,15 +21,20 @@ public class Doctor extends MedicalEmployee {
 	}
 
 	@Override
-	public void drawBlood(int getBloodLevel) {
-		getBloodLevel -= 5;
+	public void drawBlood(Patient Patient) {
+		Patient.BLOOD_LEVEL -= 5;
 		
 	}
 
 	@Override
-	public void care (int getHealthLevel) {
-		getHealthLevel -= 5;
+	public void care (Patient patient) {
+		patient.HEALTH_LEVEL += 5;
 		
+	}
+	
+	@Override
+	public int getSalary() {
+		return 90000;
 	}
 	
 

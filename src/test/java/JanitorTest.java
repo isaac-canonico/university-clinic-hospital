@@ -3,7 +3,7 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 public class JanitorTest {
-Janitor undertest=new Janitor("Jay", 101,40000);
+Janitor undertest=new Janitor("Jay", 101);
 @Test
 public void janitorShouldHaveName() {
 	String expectedName=undertest.getName();
