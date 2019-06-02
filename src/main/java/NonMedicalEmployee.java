@@ -8,6 +8,6 @@ abstract class NonMedicalEmployee extends Employee {
 
 	public abstract boolean toggles();
 
-	public abstract int getSalary();
+	public abstract String getSalary();
 
 }

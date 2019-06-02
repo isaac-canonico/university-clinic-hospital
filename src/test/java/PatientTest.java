@@ -4,8 +4,8 @@ import org.junit.Test;
 
 public class PatientTest {
 	
-	Patient patient1 = new Patient();
 	Doctor doctor1 = new Doctor("JD", 1, "Foot");
+	Patient patient1 = new Patient ("George");
 
 	@Test
 	public void patientShouldHaveDefaultBloodLevelOf20() {
@@ -34,5 +34,11 @@ public class PatientTest {
 		int newHealthLevel = patient1.getHealthLevel();
 		assertEquals(newHealthLevel, 15);
 	
+	}
+	
+	@Test
+	public void canGetPatientName() {
+		String patientName = patient1.getName();
+		assertEquals(patientName, "George");
 	}
 }

@@ -1,4 +1,3 @@
-
 public class Doctor extends MedicalEmployee {
 	
 	// employee data and specialty fields
@@ -7,17 +6,16 @@ public class Doctor extends MedicalEmployee {
 
 	
 	private String specialty;
+	protected String salary = "90,000";
 
 	public Doctor(String name, int number, String specialty) {
 		super(name, number);
 		this.name = name;
 		this.number = number;
 		this.specialty = specialty;
-	}
 
-	public String getSpecialty() {
-		return specialty;
-
+	} public String getType	() {
+		return "Doctor de la " + specialty;
 	}
 
 	@Override
@@ -33,9 +31,9 @@ public class Doctor extends MedicalEmployee {
 	}
 	
 	@Override
-	public int getSalary() {
-		return 90000;
-	}
-	
+	public String getSalary() {
+		return salary;
 
+}
+	
 }

@@ -1,25 +1,32 @@
 
 public class Janitor extends NonMedicalEmployee {
-
+	
+	private String salary = "40,000";
+	
 	public Janitor(String name, int number) {
 		super(name, number);
 
 	}
-
-	boolean onThePhone = false;
-
+	
+	@Override
+	public String getType() {
+		return "Janitor";
+	}
+	
+	boolean isSweeping = false;
 	@Override
 	public boolean toggles() {
-
-		if (onThePhone) {
+		
+		if (isSweeping) {
 			return true;
 		}
 		return false;
-
+		
 	}
 
-	public int getSalary() {
-		return 40000;
+	@Override
+	public String getSalary() {
+		return salary;
 	}
 
 }

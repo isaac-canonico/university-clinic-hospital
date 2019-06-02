@@ -8,10 +8,11 @@ abstract class MedicalEmployee extends Employee {
 	}
 	
 	public abstract void care(Patient patient);
+	
 
 	public abstract void drawBlood(Patient patient);
 	
-	public abstract int getSalary();
+	public abstract String getSalary();
 
 
 }

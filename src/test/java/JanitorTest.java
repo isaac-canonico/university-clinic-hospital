@@ -16,7 +16,7 @@ public void janitorShouldHaveEmployeeNumber() {
 }
 @Test
 public void janitorShouldHaveSalary() {
-	int expectedSalary=undertest.getSalary();
-	assertEquals(expectedSalary,40000);
+	String expectedSalary= undertest.getSalary();
+	assertEquals(expectedSalary,"40,000");
 }
 }

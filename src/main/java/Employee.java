@@ -3,6 +3,7 @@ abstract class Employee {
 	protected String name;
 	protected int number;
 	protected int salary;
+	private String type;
 	protected boolean hasBeenPaid = false;
 	
 	public Employee(String name, int number) {
@@ -15,8 +16,11 @@ abstract class Employee {
 	public void paySalary() {
 		
 		hasBeenPaid = true;
-		System.out.println("You get Paid" + salary);
+		System.out.println("You get Paid " + this.getSalary());
 		
+	}
+	public String getType() {
+			return type;
 	}
 	
 	public boolean getPaymentStatus() {
@@ -31,7 +35,7 @@ abstract class Employee {
 		return number;
 	}
 
-	public abstract int getSalary();
+	public abstract String getSalary();
 
 	}
 	

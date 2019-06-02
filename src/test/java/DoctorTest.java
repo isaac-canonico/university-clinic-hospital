@@ -27,9 +27,9 @@ public class DoctorTest {
 	}
 	
 	@Test
-	public void doctorShouldHaveSpecialty () {
-		String expected = underTest1.getSpecialty();
-				assertEquals(expected, "Foot" );
+	public void doctorShouldHaveTypeWithSpecialty () {
+		String expected = underTest1.getType();
+				assertEquals(expected, "Doctor de la Foot" );
 		
 		
 }

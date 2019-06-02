@@ -2,6 +2,7 @@
 public class Nurse extends MedicalEmployee {
 
 	protected int numberOfPatients;
+	private String salary = "50,000";
 
 	public Nurse(String name, int number) {
 		super(name, number);
@@ -18,6 +19,11 @@ public class Nurse extends MedicalEmployee {
 		numberOfPatients++;
 
 	}
+	
+	@Override
+	public String getType() {
+		return "Nurse";
+	}
 
 	public void drawBlood(Patient patient) {
 		patient.BLOOD_LEVEL -= 3;
@@ -27,7 +33,7 @@ public class Nurse extends MedicalEmployee {
 		patient.HEALTH_LEVEL += 3;
 }
 	
-	public int getSalary () {
-		return 50000;
+	public String getSalary () {
+		return salary;
 	}
 }
