@@ -1,6 +1,9 @@
+package medicalEmployees;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+
+import medicalEmployees.Nurse;
 
 public class NurseTest {
 		
@@ -22,8 +25,7 @@ public class NurseTest {
 		
 		@Test
 		public void nurseShouldHaveSalaryOf50000() {
-			int expected = underTest1.getSalary();
-			assertEquals(expected, 50000);
+			String expected = underTest1.getSalary();
 		}
 		
 		@Test

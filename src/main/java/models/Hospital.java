@@ -1,3 +1,4 @@
+package models;
 import java.util.Collection;
 import java.util.HashMap;
 
@@ -46,8 +47,8 @@ public class Hospital {
 
 		Collection<Patient> patientNames = patients.values();
 		for (Patient patient : patientNames) {
-			System.out.print("Patient: " + patient.getName() + ", " + patient.getBloodLevel() + ", "
-					+ patient.getHealthLevel() + "\n");
+			System.out.print("Patient: " + patient.getName() + ", " + patient.getBLOOD_LEVEL() + ", "
+					+ patient.getHEALTH_LEVEL() + "\n");
 
 		}
 	}

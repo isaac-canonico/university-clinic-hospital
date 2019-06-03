@@ -1,6 +1,9 @@
+package nonMedicalEmployees;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
+
+import nonMedicalEmployees.Janitor;
 
 public class JanitorTest {
 Janitor undertest=new Janitor("Jay", 101);

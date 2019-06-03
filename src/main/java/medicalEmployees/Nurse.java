@@ -1,3 +1,7 @@
+package medicalEmployees;
+
+import models.MedicalEmployee;
+import models.Patient;
 
 public class Nurse extends MedicalEmployee {
 
@@ -26,11 +30,11 @@ public class Nurse extends MedicalEmployee {
 	}
 
 	public void drawBlood(Patient patient) {
-		patient.BLOOD_LEVEL -= 3;
+		patient.setBLOOD_LEVEL(3);
 	}
 	
 	public void care(Patient patient) {
-		patient.HEALTH_LEVEL += 3;
+		patient.setHEALTH_LEVEL(3);
 }
 	
 	public String getSalary () {

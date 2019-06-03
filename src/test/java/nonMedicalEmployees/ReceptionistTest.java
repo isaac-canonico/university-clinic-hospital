@@ -1,24 +1,25 @@
+package nonMedicalEmployees;
 import static org.junit.Assert.assertEquals;
 
 	import org.junit.Test;
-	public class ReciptionestTest {
-	Reciptionest undertest200=new Reciptionest("Ahmed",200);
+	public class ReceptionistTest {
+	Receptionist undertest=new Receptionist("Ahmed",200);
 	
 	@Test
 	public void reciptionestShouldHaveName() {
-		String expectedName=undertest200.getName();
+		String expectedName=undertest.getName();
 		assertEquals(expectedName,"Ahmed");
 	}
 	@Test
 	public void reciptionestShouldHaveEmployeeNumber() {
-		int expectedNumber=undertest200.getNumber();
+		int expectedNumber=undertest.getNumber();
 		assertEquals(expectedNumber,200);
 	}
 	@Test
 	public void reciptionestShouldHaveSalary()
 	{
-		int expectedSalary=undertest200.getSalary();
-		assertEquals(expectedSalary,45000);
+		String expectedSalary=undertest.getSalary();
+		assertEquals(expectedSalary,"45,000");
 	}
 	}
 

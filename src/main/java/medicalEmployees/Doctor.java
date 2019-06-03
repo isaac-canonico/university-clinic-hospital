@@ -1,3 +1,8 @@
+package medicalEmployees;
+
+import models.MedicalEmployee;
+import models.Patient;
+
 public class Doctor extends MedicalEmployee {
 	
 	// employee data and specialty fields
@@ -20,13 +25,13 @@ public class Doctor extends MedicalEmployee {
 
 	@Override
 	public void drawBlood(Patient Patient) {
-		Patient.BLOOD_LEVEL -= 5;
+		Patient.setBLOOD_LEVEL(5);
 		
 	}
 
 	@Override
 	public void care (Patient patient) {
-		patient.HEALTH_LEVEL += 5;
+		patient.setHEALTH_LEVEL(5);
 		
 	}
 	
