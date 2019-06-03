@@ -1,5 +1,6 @@
 package nonMedicalEmployees;
 import models.NonMedicalEmployee;
+import models.Patient;
 
 public class Receptionist extends NonMedicalEmployee {
 	
@@ -32,6 +33,12 @@ public class Receptionist extends NonMedicalEmployee {
 	public String getSalary() {
 
 		return salary;
+	}
+
+	@Override
+	public void drawBlood(Patient patient1) {
+		// TODO Auto-generated method stub
+		
 	}
 	
 

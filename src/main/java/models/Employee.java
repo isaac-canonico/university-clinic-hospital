@@ -15,10 +15,13 @@ public abstract class Employee {
 	
 
 	public void paySalary() {
-		
+		if(hasBeenPaid == false) {
 		hasBeenPaid = true;
-		System.out.println("You get Paid " + this.getSalary());
+		System.out.println("\n" + "This employee has been paid : " + this.getSalary());
 		
+	} else { 
+		System.out.println("\n" + "This Employee has already been paid");
+	}
 	}
 	public String getType() {
 			return type;
@@ -40,6 +43,12 @@ public abstract class Employee {
 
 
 	public abstract void drawBlood(Patient patient1);
+
+
+	public void care(Patient patient1) {
+		
+		
+	}
 
 
 	}
