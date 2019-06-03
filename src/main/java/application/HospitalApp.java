@@ -76,7 +76,7 @@ public class HospitalApp {
 			} else if (userInput.equals("5")) {
 				doctor1.drawBlood(patient1);
 				universityClinic.printPatientStats();
-				System.out.println("\n" + "You raised the patients health by 5!");
+				System.out.println("\n" + "You lowered the patients blood level by 5!!");
 
 				continue;
 
@@ -118,9 +118,9 @@ public class HospitalApp {
 					loop = false;
 				}
 			}
-			input.close();
-
-		} while (loop == true);
+			
+			
+		} while (loop == true); input.close();
 	}
 }
 // PaySalary() abstract method with no specifications.
