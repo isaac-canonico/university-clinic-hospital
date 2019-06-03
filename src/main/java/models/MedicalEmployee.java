@@ -1,4 +1,6 @@
-abstract class MedicalEmployee extends Employee {
+package models;
+
+public abstract class MedicalEmployee extends Employee {
 
 	
 	public MedicalEmployee(String name, int number) {

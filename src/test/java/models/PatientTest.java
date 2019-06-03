@@ -1,6 +1,10 @@
+package models;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+
+import medicalEmployees.Doctor;
+import models.Patient;
 
 public class PatientTest {
 	
@@ -9,30 +13,35 @@ public class PatientTest {
 
 	@Test
 	public void patientShouldHaveDefaultBloodLevelOf20() {
-	int expected = patient1.getBloodLevel();
+	int expected = patient1.getBLOOD_LEVEL();
 	assertEquals(expected, 20);
 	
 }
 	
 	@Test
 	public void patientShouldHaveDefaultHealthLevelOf10() {
-	int expected = patient1.getHealthLevel();
+	int expected = patient1.getHEALTH_LEVEL();
 	assertEquals(expected, 10);
 }
 	
 	@Test
 	public void doctorDrawBloodShouldTake5FromBloodLevel() {
+		System.out.println(patient1.getBLOOD_LEVEL());
 		doctor1.drawBlood(patient1);
-		int newBloodLevel = patient1.getBloodLevel();
-		assertEquals(newBloodLevel, 15);
+		System.out.println(patient1.getBLOOD_LEVEL());
+		int newBloodLevel = patient1.getBLOOD_LEVEL();
+		System.out.println(patient1.getBLOOD_LEVEL());
+		assertTrue(newBloodLevel == 15);
 	
 	}
 	
 	@Test
 	public void doctorCareShouldAdd5toHealthLevel() {
+		System.out.println(patient1.getHEALTH_LEVEL());
 		doctor1.care(patient1);
-		int newHealthLevel = patient1.getHealthLevel();
-		assertEquals(newHealthLevel, 15);
+		System.out.println(patient1.getHEALTH_LEVEL());
+		int newHealthLevel = patient1.getHEALTH_LEVEL();
+		assertTrue(newHealthLevel == 15);
 	
 	}
 	

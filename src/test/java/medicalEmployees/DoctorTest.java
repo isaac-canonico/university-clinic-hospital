@@ -1,4 +1,5 @@
-import static org.junit.Assert.*;
+package medicalEmployees;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
@@ -22,8 +23,8 @@ public class DoctorTest {
 	
 	@Test
 	public void doctorShouldHaveSalaryOf90000() {
-		int expected = underTest1.getSalary();
-		assertEquals(expected, 90000);
+		String expected = underTest1.getSalary();
+		assertEquals(expected, "90,000");
 	}
 	
 	@Test

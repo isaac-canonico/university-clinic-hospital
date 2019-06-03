@@ -1,6 +1,15 @@
+package models;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+
+import medicalEmployees.Doctor;
+import medicalEmployees.Nurse;
+import models.Employee;
+import models.Hospital;
+import models.Patient;
+import nonMedicalEmployees.Janitor;
+import nonMedicalEmployees.Receptionist;
 
 public class HospitalTest {
 

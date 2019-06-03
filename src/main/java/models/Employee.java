@@ -1,4 +1,5 @@
-abstract class Employee {
+package models;
+public abstract class Employee {
 	
 	protected String name;
 	protected int number;
@@ -36,6 +37,10 @@ abstract class Employee {
 	}
 
 	public abstract String getSalary();
+
+
+	public abstract void drawBlood(Patient patient1);
+
 
 	}
 	

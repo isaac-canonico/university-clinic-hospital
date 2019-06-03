@@ -1,3 +1,5 @@
+package nonMedicalEmployees;
+import models.NonMedicalEmployee;
 
 public class Janitor extends NonMedicalEmployee {
 	
